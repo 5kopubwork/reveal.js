@@ -4,302 +4,44 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Documentation as Code Concepts & Examples</title>
+		<title>reveal.js</title>
 
-		<link rel="stylesheet" href="../css/reveal.css">
-		<link rel="stylesheet" href="../css/theme/white.css">
-    
-						<!-- Options for alternate themes
-						<link rel="stylesheet" href="../css/theme/black.css">
-						<link rel="stylesheet" href="../css/theme/white.css">
-						<link rel="stylesheet" href="../css/theme/league.css">
-						<link rel="stylesheet" href="../css/theme/sky.css">
-						<link rel="stylesheet" href="../css/theme/beige.css">
-						<link rel="stylesheet" href="../css/theme/simple.css">
-						<link rel="stylesheet" href="../css/theme/serif.css">
-						<link rel="stylesheet" href="../css/theme/blood.css">
-						<link rel="stylesheet" href="../css/theme/night.css">
-						<link rel="stylesheet" href="../css/theme/moon.css">
-						<link rel="stylesheet" href="../css/theme/solarized.css"> -->
-      
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
-
-		<!-- Theme used for syntax highlighting of code 
-		<link rel="stylesheet" href="../lib/css/zenburn.css"> -->
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? '../css/print/pdf.css' : '../css/print/paper.css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
-    
-		<script type="text/javascript" src="../jquery.js"></script>
-		<script type="text/javascript" src="../jquery_plantuml.js"></script>
-		<!-- rawdeflate.js is implicity used by jquery_plantuml.js -->
-
 	</head>
 	<body>
-		<a class="github-fork-ribbon" href="https://github.dxc.com/AET/DocAsCodeSamples/" data-ribbon="Fork me github.dxc.com" title="Fork me on GitHub">Fork me on GitHub.dxc.com</a>
 		<div class="reveal">
 			<div class="slides">
-
-<!-- Slides may contain html or markdown. If using markdown include 'data-markdown' parameter in section tag. If a section is specified as markdown, html tags, e.g., image tags are not rendered correctly. --> 
-
-  
-        
-<!-- First Slide (with background image) --> 
-<!-- This is the title page, so formatted with html to allow for white text on black background -->
-<!-- update text within tags provided -->        
-			<section data-background-image="../img/dxc_slide_images/dxc_main_title.png" data-background-size="contain"
-			data-background-repeat="no-repeat">
-
-<!-- replace title text as needed -->        
-<p><strong><span style="font-size:1.6em"><span style="color:#FFFFFF"><br/><br/>
-  Documentation as Code
-  </span></span></strong></p>
-        
-<!-- replace title text as needed -->      
-<p><span style="font-size:1.6em"><span style="color:#FFFFFF"><strong>
-  Global SME Team
-  </strong></span></span></p>
-
-<!-- update date as needed -->      
-<p><span style="font-size:0.5em"><span style="color:#FFFFFF"><strong>
-  February 7th, 2019
-  </strong></span></span></p>
-<!-- Slide Content Ends Here -->         
-			</section>
-
-<!-- Next Slide (with background image) -->        
-			<section data-markdown >
-				<textarea data-template>
-
-<!-- Slide Content Starts Here -->       
-## Agenda
-
-- What is Documentation as Code?
-- Why do it?
-- Examples
- - GitHub Pages
- - Diagrams
- - Presentations
-- Q&A / FAQ
-<!-- Slide Content Ends Here --> 
-
-        </textarea>
-			</section>
-
-<!-- Next Slide (with background image) -->   
-      <section data-background-image="../img/dxc_slide_images/dxc_black_section_title.png" data-background-size="contain"
-			data-background-repeat="no-repeat">
-
-<!-- Slide Content Starts Here -->
-<!-- Image transitions in on slide -->
-          <p class="fragment fade-up" align="center">
-            <strong><span style="font-size:1.6em"><span style="color:#FFFFFF">
-              What is Documentation as code?
-            </strong></span></span> 
-          </p>
-<!-- Slide Content Ends Here --> 
-        
-			</section>
-      
-<!-- Next Slide (with background image - no markdown, html only) -->         
-			<section data-background-image="../img/dxc_slide_images/dxc_black_section_title.png" data-background-size="contain"
-			data-background-repeat="no-repeat">
-
-<!-- Slide Content Starts Here -->    
-				<p align="center"><img data-src="../img/WhatIsDaC.png" src="../img/WhatIsDaC.png"></p>
-<!-- Slide Content Ends Here --> 
-
-			</section>
-      
-<!-- Next Slide (with background image) -->        
-			<section data-markdown data-background-image="../img/dxc_slide_images/dxc_side-picture-master_title.png" data-background-size="contain"
-			data-background-repeat="no-repeat">
-				<textarea data-template>
-
-<!-- Slide Content Starts Here -->    
-# Why?
-          
-## Collaborate - collaborate - collaborate....
-<!-- Slide Content Ends Here --> 
-
-				</textarea>
-			</section>
-      
-<!-- Next Slide (with background image) -->        
-			<section data-markdown data-background-image="../img/dxc_slide_images/dxc_side-picture-master_title.png" data-background-size="contain"
-			data-background-repeat="no-repeat">
-				<textarea data-template>
-
-<!-- Slide Content Starts Here -->    
-# Why?
-          
-## Focus on content, <br/>not aesthetics
-<!-- Slide Content Ends Here --> 
-
-				</textarea>
-			</section>
-      
-<!-- Next Slide (with background image) -->        
-			<section data-markdown data-background-image="../img/dxc_slide_images/dxc_side-picture-master_title.png" data-background-size="contain"
-			data-background-repeat="no-repeat">
-				<textarea data-template>
-
-<!-- Slide Content Starts Here -->    
-# Why?
-          
-## Increased potential to <br/>automate
-<!-- Slide Content Ends Here --> 
-
-				</textarea>
-			</section>
-      
-<!-- Next Slide (no background image) -->        
-			<section data-markdown data-background-image="../img/dxc_slide_images/dxc_basic_slide.png" data-background-size="contain"
-			data-background-repeat="no-repeat">
-
-<!-- Slide Content Starts Here -->    
-## What's in it for DXC?
-
-- Increase margins, reduce operational costs, drive higher collaboration and reuse to reduce TTM
-- Increase in cross-account collaboration potential
-- Convergence on a single platform for revision control and collaboration
-- Enables ability to access any content and have a conversation without artificial barriers
-- Leverage examples without reinventing the wheel 
-<!-- Slide Content Ends Here --> 
-
-      </section>
-      
-<!-- Next Slide (no background image) -->    
-<!-- This is the section heading page, so formatted with html to allow for white text on black background -->
-<!-- update text within tags provided -->   
-			<section data-background-image="../img/dxc_slide_images/dxc_black_section_title.png" data-background-size="contain"
-			data-background-repeat="no-repeat">
-
-<!-- Slide Content Starts Here -->
-<!-- replace heading text as needed -->      
-<p><strong><span style="font-size:1.6em"><span style="color:#FFFFFF"><br/>
-  Examples?
-  </span></span></strong></p>
-			</section>
-      
-<!-- Next Slide (no background image) -->        
-			<section data-markdown data-background-image="../img/dxc_slide_images/dxc_basic_slide.png" data-background-size="contain"
-			data-background-repeat="no-repeat">
-
-<!-- Slide Content Starts Here -->    
-## GitHub Pages Template
-      
-- GitHub provides static web hosting, generating web content from text-based data stored in GitHub.
-- View sample site based on Minimal Mistakes theme [here](https://github.dxc.com/pages/AET/DocAsCodeSamples/).
-- View source for site in root of repo (all folders excluding those prefixed with *ex*). 
-- Site is a replica of the [OurSite template](https://github.dxc.com/AET/OurSite), which can be leveraged as needed and is currently used by many teams as the basis of their own sites.
-<!-- Slide Content Ends Here --> 
-
-			</section>
-
-<!-- Next Slide (no background image) -->  
-			<section data-markdown data-background-image="../img/dxc_slide_images/dxc_basic_slide.png" data-background-size="contain"
-			data-background-repeat="no-repeat">
-
-<!-- Slide Content Starts Here -->    
-## js sequence diagrams
-      
-- View an example of a UML diagram generated from text-based syntax and then rendered through GitHub pages using javascript included with the sample.
-- View generated documentation as code **diagram**  [here](https://github.dxc.com/pages/AET/DocAsCodeSamples/ex_diagrams/index.html).
-- Update this [file](https://github.dxc.com/lsheridan2/DocAsCodeSamples/blob/master/ex_diagrams/index.html) to change the diagram.
-- Based on js sequence diagrams - [more info](https://bramp.github.io/js-sequence-diagrams/).
-- Click [here](https://github.com/bramp/js-sequence-diagrams/blob/master/src/grammar.jison) for more info on syntax.
-<!-- Slide Content Ends Here --> 
-				
-			</section>
-
-<!-- Next Slide (no background image) -->  
-			<section data-markdown data-background-image="../img/dxc_slide_images/dxc_basic_slide.png" data-background-size="contain"
-			data-background-repeat="no-repeat">
-
-<!-- Slide Content Starts Here -->    
-## reveal js presentations
-      
-- View an example of a presentation rendered from text-based content stored in GitHub and then rendered through GitHub pages using javascript included with the sample.
-- View generated documentation as code **presentation** [here](https://github.dxc.com/pages/AET/DocAsCodeSamples/ex_presentations/presentations/MyPresentation.html).
-- Update this [file](https://github.dxc.com/lsheridan2/DocAsCodeSamples/blob/master/ex_presentations/presentations/MyPresentation.html) to change the diagram.
-- Based on reveal js presentations - [more info](https://github.com/hakimel/reveal.js).
-- Click [here](https://github.com/hakimel/reveal.js#instructions) for more info on syntax.
-<!-- Slide Content Ends Here --> 
-				
-			</section>
-      
-<!-- Next Slide (no background image) -->        
-			<section data-markdown data-background-image="../img/dxc_slide_images/dxc_basic_slide.png" data-background-size="contain"
-			data-background-repeat="no-repeat">
-
-<!-- Slide Content Starts Here -->    
-## Next steps
-- Fork this presentation on github.dxc.com
-- Roll your own !
-<!-- Slide Content Ends Here -->
-
-			</section>
-
-<!-- Next Slide (no background image) -->  
-<!-- This is the closing page, so formatted with html to allow for white text on black background -->
-<!-- update text within tags provided -->   
-			<section data-background-image="../img/dxc_slide_images/dxc_black_background.png" data-background-size="contain"
-			data-background-repeat="no-repeat">
-
-<!-- Slide Content Starts Here -->   
-<!-- replace closing text as needed -->    
-<p><strong><span style="font-size:1.6em"><span style="color:#FFFFFF"><br/>
-  Thank you!
-  </span></span></strong></p>
-<!-- Slide Content Ends Here -->
-
-			</section>
-
-        
-		</div>
+				<section>Slide 1</section>
+				<section>Slide 2</section>
+			</div>
 		</div>
 
-		<script src="../lib/js/head.min.js"></script>
-		<script src="../js/reveal.js"></script>
+		<script src="js/reveal.js"></script>
 
 		<script>
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
-			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-				width: 1280,
-				height: 720,
-				margin: 0.1,
-        slideNumber: true,
-        progress: true,
-        controls: true,
-        controlsTutorial: true,
-        controlsLayout: 'bottom-right',
-        controlsBackArrows: 'faded',
-        showNotes: false,
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: '../plugin/markdown/marked.js' },
-					{ src: '../plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/search/search.js', async: true },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
 				]
 			});
 		</script>
